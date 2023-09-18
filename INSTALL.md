@@ -522,17 +522,10 @@ Otherwise, follow the instructions below to install devkitARM.
    >   If the above command does not work, try the above command but replacing `apt` with `apt-get`.
     </details>
 
-2. Once `gdebi-core` is done installing, download the devkitPro pacman package [here](https://github.com/devkitPro/pacman/releases). The file to download is `devkitpro-pacman.amd64.deb`.
-3. Change directory to where the package was downloaded. For example, if the package file was saved to **C:\Users\\_\<user>_\Downloads** (the Downloads location for most users), enter this command, where *\<user> is your **Windows** username:
+2. Once `gdebi-core` is done installing, download the devkitPro pacman package [here](https://github.com/devkitPro/pacman/releases) and follow the instructions for debian.
+3. Run the following commands to install devkitARM.
 
     ```bash
-    cd /mnt/c/Users/<user>/Downloads
-    ```
-
-4. Once the directory has been changed to the folder containing the devkitPro pacman package, run the following commands to install devkitARM.
-
-    ```bash
-    sudo gdebi devkitpro-pacman.amd64.deb
     sudo dkp-pacman -Sy
     sudo dkp-pacman -S gba-dev
     ```
@@ -544,7 +537,7 @@ Otherwise, follow the instructions below to install devkitARM.
    > Note: `devkitpro-pacman.amd64.deb` is the expected filename of the devkitPro package downloaded (for the first command). If the downloaded package filename differs, then use that filename instead.
     </details>
 
-5. Run the following command to set devkitPro related environment variables (alternatively, close and re-open WSL):
+4. Run the following command to set devkitPro related environment variables (alternatively, close and re-open WSL):
 
     ```bash
     source /etc/profile.d/devkit-env.sh
