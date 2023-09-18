@@ -37,6 +37,7 @@
 *.til
 .fuse*
 .idea/
+.vs/
 Thumbs.db
 build/
 agbcc/
