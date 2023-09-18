@@ -39,6 +39,7 @@
 .idea/
 Thumbs.db
 build/
+agbcc/
 cmake-build-*
 ld_script_ruby.txt
 ld_script_sapphire.txt
